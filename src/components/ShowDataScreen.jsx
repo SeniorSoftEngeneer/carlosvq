@@ -1,11 +1,8 @@
-// import { useFetch } from "../Hooks/useFetch";
-
-export const ShowDataScreen = ({charater}) => {
-  // const charater = useFetch();
+export const ShowDataScreen = ({ character }) => {
   return (
     <>
       <div className="api-container-card">
-        {charater?.map(({ name, id, image, species, gender, location, created }) => (
+        {character?.map(({ name, id, image, species, gender, location, created }) => (
           <div key={id} className="card-info">
               <img className="image" src={image} alt={name} />
             <p className="character-name modifier-name">{name}</p>
