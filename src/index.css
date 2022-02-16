@@ -5,9 +5,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(226, 8, 154) ;
+  color: #fff;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.glass-container {
+  margin: 50px auto;
+  width: 80%;height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff56;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 6px;
+}
+
+.btn-primary {
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding:7px;
+  border: 1px solid;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+/* Rick and Morthy API */
+
+h1 {
+  text-align: center;
+}
+.rick-and-morthy {
+  width: 95%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+
+}
+
+.api-container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+.card-info {
+  width: 220px;
+  height: 325px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 10px;
+  background-color: #ffffff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.image {
+  width: 13.75rem;
+  height: 10rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.character-name {
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+.modifier-name {
+  font-weight: bold;
+
+}
+.character-name ~ .location {
+  font-weight: bold;
+}
+
+.page {
+  width: 90%;
+  height: 50px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.btn-pagination{
+  margin: 10px;
 }
